@@ -26,7 +26,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../download (2).png</pixmap>
+    <pixmap>../img/download (2).png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -197,7 +197,7 @@ background-color: rgb(255, 85, 0)</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../download (9).png</pixmap>
+    <pixmap>../img/download (9).png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -216,7 +216,7 @@ background-color: rgb(255, 85, 0)</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../download (15).png</pixmap>
+    <pixmap>../img/download (15).png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -235,7 +235,7 @@ background-color: rgb(255, 85, 0)</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../download (11).png</pixmap>
+    <pixmap>../img/download (11).png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -254,7 +254,7 @@ background-color: rgb(255, 85, 0)</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../download (12).png</pixmap>
+    <pixmap>../img/download (12).png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -273,7 +273,7 @@ background-color: rgb(255, 85, 0)</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../download (14).png</pixmap>
+    <pixmap>../img/download (14).png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -409,7 +409,7 @@ background-color: rgb(189, 189, 189);</string>
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../magnifying-glass-solid.svg</pixmap>
+    <pixmap>../img/magnifying-glass-solid.svg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

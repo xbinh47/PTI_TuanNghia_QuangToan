@@ -26,7 +26,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../Carrot-Cake-Recipe-Video.jpg</pixmap>
+    <pixmap>../img/Carrot-Cake-Recipe-Video.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -45,7 +45,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../heart-regular.svg</pixmap>
+    <pixmap>../img/heart-regular.svg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -64,7 +64,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../clock-regular.svg</pixmap>
+    <pixmap>../img/clock-regular.svg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -112,7 +112,7 @@
      <x>10</x>
      <y>10</y>
      <width>91</width>
-     <height>20</height>
+     <height>25</height>
     </rect>
    </property>
    <property name="font">
@@ -153,8 +153,8 @@ border-radius: 10px</string>
     <rect>
      <x>310</x>
      <y>10</y>
-     <width>91</width>
-     <height>21</height>
+     <width>90</width>
+     <height>25</height>
     </rect>
    </property>
    <property name="text">
@@ -162,7 +162,7 @@ border-radius: 10px</string>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../house-chimney-solid.svg</normaloff>../house-chimney-solid.svg</iconset>
+     <normaloff>../img/house-chimney-solid.svg</normaloff>../img/house-chimney-solid.svg</iconset>
    </property>
   </widget>
  </widget>
