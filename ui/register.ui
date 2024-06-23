@@ -23,9 +23,9 @@
    <widget class="QLabel" name="register_text">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>270</x>
       <y>20</y>
-      <width>351</width>
+      <width>331</width>
       <height>111</height>
      </rect>
     </property>
@@ -93,59 +93,13 @@
      </font>
     </property>
     <property name="text">
-     <string>*register</string>
+     <string>Register</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtEmail">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>140</y>
-      <width>591</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>214</red>
-          <green>172</green>
-          <blue>73</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>214</red>
-          <green>172</green>
-          <blue>73</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled/>
-     </palette>
-    </property>
-    <property name="font">
-     <font>
-      <family>Comic Sans MS</family>
-      <pointsize>18</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>*email</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="txtPassword">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
+      <x>120</x>
       <y>200</y>
       <width>591</width>
       <height>41</height>
@@ -185,14 +139,69 @@
      </font>
     </property>
     <property name="text">
-     <string>*password</string>
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtPassword">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>260</y>
+      <width>591</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
     </property>
    </widget>
    <widget class="QPushButton" name="btnRegister">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>260</y>
+      <x>300</x>
+      <y>380</y>
       <width>201</width>
       <height>41</height>
      </rect>
@@ -241,14 +250,14 @@
      </font>
     </property>
     <property name="text">
-     <string>*ok</string>
+     <string>OK</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="btnRegister_2">
+   <widget class="QPushButton" name="btnLogin">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>320</y>
+      <x>280</x>
+      <y>440</y>
       <width>241</width>
       <height>41</height>
      </rect>
@@ -297,14 +306,14 @@
      </font>
     </property>
     <property name="text">
-     <string>*login</string>
+     <string>Login</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>-90</x>
-      <y>-80</y>
+      <y>-90</y>
       <width>971</width>
       <height>741</height>
      </rect>
@@ -319,7 +328,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/costume1.svg</pixmap>
+     <pixmap>../img/costume1.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -338,7 +347,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/costume2.svg</pixmap>
+     <pixmap>../img/costume2.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -357,7 +366,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/apple.svg</pixmap>
+     <pixmap>../img/apple.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -376,7 +385,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/lemon.svg</pixmap>
+     <pixmap>../img/lemon.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -395,7 +404,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/carrot.svg</pixmap>
+     <pixmap>../img/carrot.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -414,16 +423,117 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/cabbage.svg</pixmap>
+     <pixmap>../img/cabbage.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="QLineEdit" name="txtCPassword">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>320</y>
+      <width>591</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Confirm password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtName">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>140</y>
+      <width>591</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled/>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Username</string>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
    <zorder>btnRegister</zorder>
-   <zorder>btnRegister_2</zorder>
+   <zorder>btnLogin</zorder>
    <zorder>label_3</zorder>
    <zorder>register_text</zorder>
    <zorder>label_4</zorder>
@@ -431,6 +541,8 @@
    <zorder>label_6</zorder>
    <zorder>txtEmail</zorder>
    <zorder>txtPassword</zorder>
+   <zorder>txtCPassword</zorder>
+   <zorder>txtName</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

@@ -23,9 +23,9 @@
    <widget class="QLabel" name="login_text">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>290</x>
       <y>20</y>
-      <width>211</width>
+      <width>191</width>
       <height>111</height>
      </rect>
     </property>
@@ -93,7 +93,7 @@
      </font>
     </property>
     <property name="text">
-     <string>*login</string>
+     <string>Login</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtEmail">
@@ -139,7 +139,10 @@
      </font>
     </property>
     <property name="text">
-     <string>*email</string>
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Email</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="txtPassword">
@@ -185,10 +188,16 @@
      </font>
     </property>
     <property name="text">
-     <string>*password</string>
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Password</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="login">
+   <widget class="QPushButton" name="btnLogin">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -241,7 +250,7 @@
      </font>
     </property>
     <property name="text">
-     <string>*ok</string>
+     <string>OK</string>
     </property>
    </widget>
    <widget class="QLabel" name="noodle">
@@ -263,7 +272,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="ok_2">
+   <widget class="QPushButton" name="btnRegister">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -316,14 +325,14 @@
      </font>
     </property>
     <property name="text">
-     <string>*register</string>
+     <string>Register</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>-90</x>
-      <y>-80</y>
+      <x>-80</x>
+      <y>-90</y>
       <width>971</width>
       <height>741</height>
      </rect>
@@ -338,7 +347,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/costume1.svg</pixmap>
+     <pixmap>../img/costume1.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -357,7 +366,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/costume2.svg</pixmap>
+     <pixmap>../img/costume2.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -376,7 +385,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/apple.svg</pixmap>
+     <pixmap>../img/apple.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -395,7 +404,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/lemon.svg</pixmap>
+     <pixmap>../img/lemon.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -414,7 +423,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/carrot.svg</pixmap>
+     <pixmap>../img/carrot.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -433,7 +442,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../Downloads/cabbage.svg</pixmap>
+     <pixmap>../img/cabbage.svg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -441,9 +450,9 @@
    </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
-   <zorder>login</zorder>
+   <zorder>btnLogin</zorder>
    <zorder>noodle</zorder>
-   <zorder>ok_2</zorder>
+   <zorder>btnRegister</zorder>
    <zorder>label_3</zorder>
    <zorder>login_text</zorder>
    <zorder>label_4</zorder>

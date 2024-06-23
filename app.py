@@ -9,12 +9,13 @@ class Register(QtWidgets.QMainWindow):
         uic.loadUi("ui/register.ui", self)
         self.name = ""
         self.btnRegister.clicked.connect(self.Register)
-        self.btn_login.clicked.connect(self.showLoginPage)
+        self.btnLogin.clicked.connect(self.showLoginPage)
 
     def Register(self):
-        self.name = self.txtFullName.text()
+        self.name = self.txtName.text()
         email = self.txtEmail.text
         password = self.txtPassword.text()
+        comfirm_password = self.txtCPassword.text()
 
         if not self.name:
             msg_box.setText("Vui lòng nhập tên!")
@@ -44,7 +45,7 @@ class Login(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         uic.loadUi("ui/login.ui",self)
-        self.login.clicked.connect(self.check_login)
+        self.btnLogin.clicked.connect(self.check_login)
         self.btnRegister.clicked.connect(self.show_register)
 
     def check_login(self):
