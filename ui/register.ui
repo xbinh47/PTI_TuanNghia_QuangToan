@@ -20,7 +20,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="login_text">
+   <widget class="QLabel" name="register_text">
     <property name="geometry">
      <rect>
       <x>230</x>
@@ -96,7 +96,7 @@
      <string>*register</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="email">
+   <widget class="QLineEdit" name="txtEmail">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -142,7 +142,7 @@
      <string>*email</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="password">
+   <widget class="QLineEdit" name="txtPassword">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -188,7 +188,7 @@
      <string>*password</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="ok">
+   <widget class="QPushButton" name="btnRegister">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -244,26 +244,7 @@
      <string>*ok</string>
     </property>
    </widget>
-   <widget class="QLabel" name="noodle">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>430</y>
-      <width>151</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/pngtree-chinese-noodles-noodles-food-food-png-image_3793700.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="ok_2">
+   <widget class="QPushButton" name="btnRegister_2">
     <property name="geometry">
      <rect>
       <x>260</x>
@@ -441,16 +422,15 @@
    </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
-   <zorder>ok</zorder>
-   <zorder>noodle</zorder>
-   <zorder>ok_2</zorder>
+   <zorder>btnRegister</zorder>
+   <zorder>btnRegister_2</zorder>
    <zorder>label_3</zorder>
-   <zorder>login_text</zorder>
-   <zorder>email</zorder>
-   <zorder>password</zorder>
+   <zorder>register_text</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
    <zorder>label_6</zorder>
+   <zorder>txtEmail</zorder>
+   <zorder>txtPassword</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

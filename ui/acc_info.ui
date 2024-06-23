@@ -23,9 +23,9 @@
    <widget class="QLabel" name="login_text">
     <property name="geometry">
      <rect>
-      <x>80</x>
-      <y>60</y>
-      <width>521</width>
+      <x>130</x>
+      <y>80</y>
+      <width>491</width>
       <height>111</height>
      </rect>
     </property>
@@ -93,7 +93,7 @@
      </font>
     </property>
     <property name="text">
-     <string>*account info</string>
+     <string>Account info</string>
     </property>
    </widget>
    <widget class="QLabel" name="noodle">
