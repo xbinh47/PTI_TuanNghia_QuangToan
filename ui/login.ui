@@ -20,88 +20,12 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="chinapizza1">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>40</y>
-      <width>371</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/pizza.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="chinapizza2">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>190</y>
-      <width>371</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/pizza.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="chinapizza3">
-    <property name="geometry">
-     <rect>
-      <x>350</x>
-      <y>350</y>
-      <width>371</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/pizza.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="background">
-    <property name="geometry">
-     <rect>
-      <x>-10</x>
-      <y>-1</y>
-      <width>811</width>
-      <height>581</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/costume2.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="login_text">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>270</x>
       <y>20</y>
-      <width>431</width>
+      <width>211</width>
       <height>111</height>
      </rect>
     </property>
@@ -111,9 +35,18 @@
        <colorrole role="WindowText">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>147</red>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Accent">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
           <green>0</green>
-          <blue>145</blue>
+          <blue>0</blue>
          </color>
         </brush>
        </colorrole>
@@ -122,9 +55,76 @@
        <colorrole role="WindowText">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>147</red>
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Accent">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
           <green>0</green>
-          <blue>145</blue>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="Accent">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>48</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>*login</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="email">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>140</y>
+      <width>591</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>214</red>
+          <green>172</green>
+          <blue>73</blue>
          </color>
         </brush>
        </colorrole>
@@ -134,100 +134,21 @@
     </property>
     <property name="font">
      <font>
-      <family>Vivaldi</family>
-      <pointsize>48</pointsize>
-      <italic>true</italic>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>LOGIN</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="chineseman1">
-    <property name="geometry">
-     <rect>
-      <x>520</x>
-      <y>280</y>
-      <width>281</width>
-      <height>281</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/468-chinaman-thumbs-up.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="chineseman2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>290</y>
-      <width>281</width>
-      <height>281</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/468-chinaman-thumbs-up.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="email">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>150</y>
-      <width>531</width>
-      <height>28</height>
-     </rect>
-    </property>
-    <property name="palette">
-     <palette>
-      <active>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>214</red>
-          <green>172</green>
-          <blue>73</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </active>
-      <inactive>
-       <colorrole role="WindowText">
-        <brush brushstyle="SolidPattern">
-         <color alpha="255">
-          <red>214</red>
-          <green>172</green>
-          <blue>73</blue>
-         </color>
-        </brush>
-       </colorrole>
-      </inactive>
-      <disabled/>
-     </palette>
-    </property>
-    <property name="text">
-     <string>EMAIL</string>
+     <string>*email</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="password">
     <property name="geometry">
      <rect>
-      <x>110</x>
+      <x>100</x>
       <y>200</y>
-      <width>531</width>
-      <height>28</height>
+      <width>591</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="palette">
@@ -257,8 +178,14 @@
       <disabled/>
      </palette>
     </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>PASSWORD</string>
+     <string>*password</string>
     </property>
    </widget>
    <widget class="QPushButton" name="ok">
@@ -276,9 +203,9 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>240</red>
-          <green>40</green>
-          <blue>230</blue>
+          <red>159</red>
+          <green>159</green>
+          <blue>159</blue>
          </color>
         </brush>
        </colorrole>
@@ -287,9 +214,9 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>240</red>
-          <green>40</green>
-          <blue>230</blue>
+          <red>159</red>
+          <green>159</green>
+          <blue>159</blue>
          </color>
         </brush>
        </colorrole>
@@ -298,74 +225,23 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>240</red>
-          <green>40</green>
-          <blue>230</blue>
+          <red>159</red>
+          <green>159</green>
+          <blue>159</blue>
          </color>
         </brush>
        </colorrole>
       </disabled>
      </palette>
     </property>
-    <property name="text">
-     <string>OK</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="ZHONG_XINA">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>380</y>
-      <width>301</width>
-      <height>171</height>
-     </rect>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
+     </font>
     </property>
     <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/0uw29o9qzuna1.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="xi_jinpeng1">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>231</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/Winnie_the_Pooh_Vector.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="xi_jinpeng2">
-    <property name="geometry">
-     <rect>
-      <x>530</x>
-      <y>0</y>
-      <width>231</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../../Downloads/Winnie_the_Pooh_Vector.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
+     <string>*ok</string>
     </property>
    </widget>
    <widget class="QLabel" name="noodle">
@@ -402,9 +278,9 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>240</red>
-          <green>40</green>
-          <blue>230</blue>
+          <red>109</red>
+          <green>109</green>
+          <blue>109</blue>
          </color>
         </brush>
        </colorrole>
@@ -413,9 +289,9 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>240</red>
-          <green>40</green>
-          <blue>230</blue>
+          <red>109</red>
+          <green>109</green>
+          <blue>109</blue>
          </color>
         </brush>
        </colorrole>
@@ -424,34 +300,157 @@
        <colorrole role="Button">
         <brush brushstyle="SolidPattern">
          <color alpha="255">
-          <red>240</red>
-          <green>40</green>
-          <blue>230</blue>
+          <red>109</red>
+          <green>109</green>
+          <blue>109</blue>
          </color>
         </brush>
        </colorrole>
       </disabled>
      </palette>
     </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>REGISTER</string>
+     <string>*register</string>
     </property>
    </widget>
-   <zorder>background</zorder>
-   <zorder>chinapizza1</zorder>
-   <zorder>chinapizza2</zorder>
-   <zorder>chinapizza3</zorder>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>-90</x>
+      <y>-80</y>
+      <width>971</width>
+      <height>741</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Comic Sans MS</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/costume1.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-30</x>
+      <y>-30</y>
+      <width>851</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/costume2.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>161</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/apple.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>340</y>
+      <width>131</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/lemon.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>20</y>
+      <width>131</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/carrot.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>181</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../../Downloads/cabbage.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>label</zorder>
+   <zorder>ok</zorder>
+   <zorder>noodle</zorder>
+   <zorder>ok_2</zorder>
+   <zorder>label_3</zorder>
    <zorder>login_text</zorder>
    <zorder>email</zorder>
    <zorder>password</zorder>
-   <zorder>ok</zorder>
-   <zorder>xi_jinpeng1</zorder>
-   <zorder>xi_jinpeng2</zorder>
-   <zorder>noodle</zorder>
-   <zorder>chineseman1</zorder>
-   <zorder>ZHONG_XINA</zorder>
-   <zorder>chineseman2</zorder>
-   <zorder>ok_2</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

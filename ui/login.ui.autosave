@@ -23,9 +23,9 @@
    <widget class="QLabel" name="login_text">
     <property name="geometry">
      <rect>
-      <x>230</x>
+      <x>270</x>
       <y>20</y>
-      <width>351</width>
+      <width>211</width>
       <height>111</height>
      </rect>
     </property>
@@ -93,10 +93,10 @@
      </font>
     </property>
     <property name="text">
-     <string>*register</string>
+     <string>*login</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="email">
+   <widget class="QLineEdit" name="txtEmail">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -142,7 +142,7 @@
      <string>*email</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="password">
+   <widget class="QLineEdit" name="txtPassword">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -188,7 +188,7 @@
      <string>*password</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="ok">
+   <widget class="QPushButton" name="login">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -316,7 +316,7 @@
      </font>
     </property>
     <property name="text">
-     <string>*login</string>
+     <string>*register</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -441,16 +441,16 @@
    </widget>
    <zorder>label_2</zorder>
    <zorder>label</zorder>
-   <zorder>ok</zorder>
+   <zorder>login</zorder>
    <zorder>noodle</zorder>
    <zorder>ok_2</zorder>
    <zorder>label_3</zorder>
    <zorder>login_text</zorder>
-   <zorder>email</zorder>
-   <zorder>password</zorder>
    <zorder>label_4</zorder>
    <zorder>label_5</zorder>
    <zorder>label_6</zorder>
+   <zorder>txtEmail</zorder>
+   <zorder>txtPassword</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
