@@ -369,7 +369,7 @@ background-color: rgb(255, 85, 0)</string>
     <string>SWEET</string>
    </property>
   </widget>
-  <widget class="QListWidget" name="listWidget">
+  <widget class="QListWidget" name="Food_item">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -448,7 +448,7 @@ background-color: rgb(189, 189, 189);</string>
   <zorder>label_10</zorder>
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
-  <zorder>listWidget</zorder>
+  <zorder>Food_item</zorder>
   <zorder>search</zorder>
   <zorder>label_13</zorder>
   <zorder>Hi_2</zorder>

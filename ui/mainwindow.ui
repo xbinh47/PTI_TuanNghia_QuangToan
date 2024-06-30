@@ -296,6 +296,16 @@ background: rgb(255, 255, 255)</string>
      <string>- hjbijnimmmmmmmmmmmmmmmmmmmmmmmmmmmnn</string>
     </property>
    </widget>
+   <widget class="QListWidget" name="ingredient_item">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>511</width>
+      <height>91</height>
+     </rect>
+    </property>
+   </widget>
    <zorder>Main_image</zorder>
    <zorder>Name_main</zorder>
    <zorder>Calories</zorder>
@@ -310,6 +320,7 @@ background: rgb(255, 255, 255)</string>
    <zorder>Ingredients_4</zorder>
    <zorder>Ingredients_5</zorder>
    <zorder>label_2</zorder>
+   <zorder>ingredient_item</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -317,7 +328,7 @@ background: rgb(255, 255, 255)</string>
      <x>0</x>
      <y>0</y>
      <width>552</width>
-     <height>26</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>
