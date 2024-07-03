@@ -152,25 +152,6 @@
      <string>Ingredients</string>
     </property>
    </widget>
-   <widget class="QLabel" name="Ingredients">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>290</y>
-      <width>91</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/images (1).jpeg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
@@ -186,63 +167,6 @@ background: rgb(255, 255, 255)</string>
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="Ingredients_2">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>290</y>
-      <width>91</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/images.jpeg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="Ingredients_3">
-    <property name="geometry">
-     <rect>
-      <x>290</x>
-      <y>290</y>
-      <width>91</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/images (2).jpeg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="QLabel" name="Ingredients_4">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>290</y>
-      <width>91</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap>../img/eggs-e1648216350119-500x500.jpeg</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
     </property>
    </widget>
    <widget class="QLabel" name="Main_image">
@@ -299,7 +223,7 @@ background: rgb(255, 255, 255)</string>
    <widget class="QListWidget" name="ingredient_item">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>280</y>
       <width>511</width>
       <height>91</height>
@@ -307,20 +231,16 @@ background: rgb(255, 255, 255)</string>
     </property>
    </widget>
    <zorder>Main_image</zorder>
+   <zorder>ingredient_item</zorder>
    <zorder>Name_main</zorder>
    <zorder>Calories</zorder>
    <zorder>Homebutton_main</zorder>
    <zorder>label_3</zorder>
    <zorder>Time_main</zorder>
    <zorder>label</zorder>
-   <zorder>Ingredients</zorder>
    <zorder>label_6</zorder>
-   <zorder>Ingredients_2</zorder>
-   <zorder>Ingredients_3</zorder>
-   <zorder>Ingredients_4</zorder>
    <zorder>Ingredients_5</zorder>
    <zorder>label_2</zorder>
-   <zorder>ingredient_item</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -328,7 +248,7 @@ background: rgb(255, 255, 255)</string>
      <x>0</x>
      <y>0</y>
      <width>552</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
