@@ -6,7 +6,8 @@ data/file.txt
 img/file.txt
 ui/file.txt
 ui/food_Item.ui
-ui/form.ui
+ui/home.ui
 ui/ingredient_Item.ui
 ui/mainwindow.ui
+ui/menu_Item.ui
 ui/widget.py

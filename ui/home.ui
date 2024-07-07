@@ -32,7 +32,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="Hi_username">
+  <widget class="QLabel" name="username">
    <property name="geometry">
     <rect>
      <x>-10</x>
@@ -99,7 +99,7 @@ background: rgb(255, 255, 255)</string>
     <string>Quick and delicious</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="All_food">
+  <widget class="QPushButton" name="allFood">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -116,7 +116,7 @@ background-color: rgb(255, 170, 127);</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Vegan_food">
+  <widget class="QPushButton" name="veganFood">
    <property name="geometry">
     <rect>
      <x>130</x>
@@ -133,7 +133,7 @@ background-color: rgb(85, 255, 127)</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Water_food">
+  <widget class="QPushButton" name="waterFood">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -150,7 +150,7 @@ background-color: rgb(0, 170, 255)</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Meat_food">
+  <widget class="QPushButton" name="meatFood">
    <property name="geometry">
     <rect>
      <x>350</x>
@@ -167,7 +167,7 @@ background-color: rgb(170, 85, 255)</string>
     <string/>
    </property>
   </widget>
-  <widget class="QPushButton" name="Sweet_food">
+  <widget class="QPushButton" name="sweetFood">
    <property name="geometry">
     <rect>
      <x>460</x>
@@ -369,13 +369,13 @@ background-color: rgb(255, 85, 0)</string>
     <string>SWEET</string>
    </property>
   </widget>
-  <widget class="QListWidget" name="Food_item">
+  <widget class="QListWidget" name="foodItem">
    <property name="geometry">
     <rect>
      <x>20</x>
      <y>310</y>
-     <width>256</width>
-     <height>192</height>
+     <width>501</width>
+     <height>411</height>
     </rect>
    </property>
   </widget>
@@ -396,26 +396,7 @@ background-color: rgb(189, 189, 189);</string>
     <string>Search</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_13">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>50</y>
-     <width>25</width>
-     <height>25</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../img/magnifying-glass-solid.svg</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="Hi_2">
+  <widget class="QLabel" name="hi">
    <property name="geometry">
     <rect>
      <x>90</x>
@@ -428,16 +409,42 @@ background-color: rgb(189, 189, 189);</string>
     <string>12345</string>
    </property>
   </widget>
-  <zorder>Hi_username</zorder>
+  <widget class="QPushButton" name="searchBtn">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>50</y>
+     <width>41</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/magnifying-glass-solid.svg</normaloff>../img/magnifying-glass-solid.svg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>25</width>
+     <height>25</height>
+    </size>
+   </property>
+  </widget>
+  <zorder>username</zorder>
   <zorder>avatar</zorder>
   <zorder>Hello</zorder>
   <zorder>label</zorder>
   <zorder>hello</zorder>
-  <zorder>All_food</zorder>
-  <zorder>Vegan_food</zorder>
-  <zorder>Water_food</zorder>
-  <zorder>Meat_food</zorder>
-  <zorder>Sweet_food</zorder>
+  <zorder>allFood</zorder>
+  <zorder>veganFood</zorder>
+  <zorder>waterFood</zorder>
+  <zorder>meatFood</zorder>
+  <zorder>sweetFood</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>label_5</zorder>
@@ -448,10 +455,10 @@ background-color: rgb(189, 189, 189);</string>
   <zorder>label_10</zorder>
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
-  <zorder>Food_item</zorder>
+  <zorder>foodItem</zorder>
   <zorder>search</zorder>
-  <zorder>label_13</zorder>
-  <zorder>Hi_2</zorder>
+  <zorder>hi</zorder>
+  <zorder>searchBtn</zorder>
  </widget>
  <resources/>
  <connections/>

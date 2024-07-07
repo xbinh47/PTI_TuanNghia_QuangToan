@@ -27,7 +27,3 @@ def detail_recipe(id):
     response = requests.get(url, params=query_string)
 
     return response.json()
-
-print(search_recipes("carrot cake"))
-# print(detail_recipe(715415))
-# detail_recipe(715415)
