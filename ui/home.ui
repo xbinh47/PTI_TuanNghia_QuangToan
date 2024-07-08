@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>552</width>
-    <height>736</height>
+    <width>600</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QLabel" name="avatar">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>40</y>
+     <x>20</x>
+     <y>0</y>
      <width>71</width>
      <height>41</height>
     </rect>
@@ -36,7 +36,7 @@
    <property name="geometry">
     <rect>
      <x>-10</x>
-     <y>-30</y>
+     <y>0</y>
      <width>641</width>
      <height>841</height>
     </rect>
@@ -57,8 +57,8 @@ background: rgb(255, 255, 255)</string>
   <widget class="QLabel" name="Hello">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>50</y>
+     <x>90</x>
+     <y>10</y>
      <width>21</width>
      <height>21</height>
     </rect>
@@ -70,8 +70,8 @@ background: rgb(255, 255, 255)</string>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>110</y>
+     <x>30</x>
+     <y>50</y>
      <width>161</width>
      <height>41</height>
     </rect>
@@ -89,8 +89,8 @@ background: rgb(255, 255, 255)</string>
   <widget class="QLabel" name="hello">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>150</y>
+     <x>30</x>
+     <y>90</y>
      <width>851</width>
      <height>20</height>
     </rect>
@@ -102,8 +102,8 @@ background: rgb(255, 255, 255)</string>
   <widget class="QPushButton" name="allFood">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>200</y>
+     <x>40</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -119,8 +119,8 @@ background-color: rgb(255, 170, 127);</string>
   <widget class="QPushButton" name="veganFood">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>200</y>
+     <x>150</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -136,8 +136,8 @@ background-color: rgb(85, 255, 127)</string>
   <widget class="QPushButton" name="waterFood">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>200</y>
+     <x>260</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -153,8 +153,8 @@ background-color: rgb(0, 170, 255)</string>
   <widget class="QPushButton" name="meatFood">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>200</y>
+     <x>370</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -170,8 +170,8 @@ background-color: rgb(170, 85, 255)</string>
   <widget class="QPushButton" name="sweetFood">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>200</y>
+     <x>480</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -187,8 +187,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>200</y>
+     <x>40</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -206,8 +206,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>200</y>
+     <x>150</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -225,8 +225,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>200</y>
+     <x>370</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -244,8 +244,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>200</y>
+     <x>260</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -263,8 +263,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>200</y>
+     <x>480</x>
+     <y>120</y>
      <width>55</width>
      <height>55</height>
     </rect>
@@ -282,8 +282,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>260</y>
+     <x>50</x>
+     <y>180</y>
      <width>55</width>
      <height>20</height>
     </rect>
@@ -300,8 +300,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_9">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>260</y>
+     <x>150</x>
+     <y>180</y>
      <width>55</width>
      <height>20</height>
     </rect>
@@ -318,8 +318,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_10">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>260</y>
+     <x>260</x>
+     <y>180</y>
      <width>55</width>
      <height>20</height>
     </rect>
@@ -336,8 +336,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_11">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>260</y>
+     <x>370</x>
+     <y>180</y>
      <width>55</width>
      <height>20</height>
     </rect>
@@ -354,8 +354,8 @@ background-color: rgb(255, 85, 0)</string>
   <widget class="QLabel" name="label_12">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>260</y>
+     <x>480</x>
+     <y>180</y>
      <width>57</width>
      <height>20</height>
     </rect>
@@ -369,21 +369,11 @@ background-color: rgb(255, 85, 0)</string>
     <string>SWEET</string>
    </property>
   </widget>
-  <widget class="QListWidget" name="foodItem">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>310</y>
-     <width>501</width>
-     <height>411</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="search">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>50</y>
+     <x>340</x>
+     <y>10</y>
      <width>191</width>
      <height>26</height>
     </rect>
@@ -399,8 +389,8 @@ background-color: rgb(189, 189, 189);</string>
   <widget class="QLabel" name="hi">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>50</y>
+     <x>110</x>
+     <y>10</y>
      <width>221</width>
      <height>21</height>
     </rect>
@@ -412,8 +402,8 @@ background-color: rgb(189, 189, 189);</string>
   <widget class="QPushButton" name="searchBtn">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>50</y>
+     <x>530</x>
+     <y>10</y>
      <width>41</width>
      <height>29</height>
     </rect>
@@ -433,6 +423,16 @@ background-color: rgb(189, 189, 189);</string>
      <width>25</width>
      <height>25</height>
     </size>
+   </property>
+  </widget>
+  <widget class="QWidget" name="listItems" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>210</y>
+     <width>500</width>
+     <height>500</height>
+    </rect>
    </property>
   </widget>
   <zorder>username</zorder>
@@ -455,9 +455,9 @@ background-color: rgb(189, 189, 189);</string>
   <zorder>label_10</zorder>
   <zorder>label_11</zorder>
   <zorder>label_12</zorder>
-  <zorder>foodItem</zorder>
-  <zorder>search</zorder>
   <zorder>hi</zorder>
+  <zorder>listItems</zorder>
+  <zorder>search</zorder>
   <zorder>searchBtn</zorder>
  </widget>
  <resources/>
