@@ -382,7 +382,13 @@ background-color: rgb(255, 85, 0)</string>
     <string notr="true">border-radius: 10px;
 background-color: rgb(189, 189, 189);</string>
    </property>
+   <property name="inputMask">
+    <string/>
+   </property>
    <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
     <string>Search</string>
    </property>
   </widget>

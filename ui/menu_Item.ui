@@ -61,14 +61,14 @@ white-space: pre;</string>
   <widget class="QPushButton" name="detail">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>52</x>
      <y>240</y>
      <width>86</width>
      <height>29</height>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>&lt;More&gt; </string>
    </property>
   </widget>
  </widget>
