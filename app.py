@@ -1,8 +1,36 @@
 import sys
 from PyQt6 import uic
 from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QGridLayout, QSizePolicy, QScrollArea
+from PyQt6.QtGui import QPixmap, QImage
 import api
-from ui.widget.menu_Item import MenuItemWidget
+import requests
+
+class MenuItemWidget(QWidget):
+    def __init__(self, id, imgLink, title, parent=None):
+        super().__init__(parent)
+        uic.loadUi("ui/menu_Item.ui", self)
+        self.id = id
+        self.imgLink = imgLink
+        self.title = title
+        self.detail.clicked.connect(self.navigateToDetail)
+
+        self.init()
+
+    def init(self):
+        image = QImage()
+        image.loadFromData(requests.get(self.imgLink).content)
+        self.image.setPixmap(QPixmap(image))
+        self.image.setScaledContents(True)
+        self.name.setText(self.title)
+        self.name.setWordWrap(True)  # Enable word wrapping for the title
+
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        self.setMinimumHeight(300)
+        self.setMinimumWidth(220)
+    
+    def navigateToDetail(self):
+        detailScreen = FoodItem(self.id)
+        detailScreen.show()
 
 class Home(QMainWindow):
     def __init__(self):
@@ -58,8 +86,15 @@ class Home(QMainWindow):
                 column = 0
                 row += 1
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    home = Home()
-    home.show()
-    sys.exit(app.exec())
+class FoodItem(QMainWindow):
+    def __init__(self, id):
+        super().__init__()
+
+        uic.loadUi("ui/food_item.ui", self)
+        self.food_detail = api.detail_recipe(id)
+        # self.time.setText(f"{self.food_detail['readyInMinutes']} minutes")
+
+app = QApplication(sys.argv)
+home = Home()
+home.show()
+sys.exit(app.exec())
