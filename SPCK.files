@@ -3,8 +3,15 @@ setup.py
 .qtc_clangd/compile_commands.json
 app/file.txt
 data/file.txt
-img/file.txt
+img/1537562.png
+img/apple.svg
+img/cabbage.svg
+img/carrot.svg
+img/costume1.svg
+img/costume2.svg
+img/lemon.svg
+ui/acc_info - Copy.ui
+ui/acc_info.ui
 ui/file.txt
-ui/form.ui
 ui/login.ui
 ui/register.ui
