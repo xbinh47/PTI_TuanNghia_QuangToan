@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>552</width>
-    <height>736</height>
+    <width>600</width>
+    <height>720</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>420</y>
+      <x>0</x>
+      <y>380</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -36,7 +36,7 @@
    <widget class="QPushButton" name="homeBtn">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>460</x>
       <y>30</y>
       <width>90</width>
       <height>41</height>
@@ -65,10 +65,10 @@
    <widget class="QLabel" name="image">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>10</y>
-      <width>411</width>
-      <height>311</height>
+      <x>0</x>
+      <y>0</y>
+      <width>601</width>
+      <height>351</height>
      </rect>
     </property>
     <property name="text">
@@ -84,8 +84,8 @@
    <widget class="QLabel" name="money">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>470</y>
+      <x>520</x>
+      <y>330</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -102,8 +102,8 @@
    <widget class="QLabel" name="like">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>470</y>
+      <x>520</x>
+      <y>380</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -120,8 +120,8 @@
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>370</y>
+      <x>0</x>
+      <y>330</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -139,8 +139,8 @@
    <widget class="QLabel" name="healthy">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>420</y>
+      <x>40</x>
+      <y>380</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -157,8 +157,8 @@
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>370</y>
+      <x>160</x>
+      <y>330</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -176,7 +176,7 @@
    <widget class="QLabel" name="classify">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>10</x>
       <y>30</y>
       <width>91</width>
       <height>25</height>
@@ -199,8 +199,8 @@ border-radius: 10px</string>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>470</y>
+      <x>490</x>
+      <y>330</y>
       <width>21</width>
       <height>31</height>
      </rect>
@@ -218,8 +218,8 @@ border-radius: 10px</string>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>420</y>
+      <x>160</x>
+      <y>380</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -237,8 +237,8 @@ border-radius: 10px</string>
    <widget class="QLabel" name="time">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>370</y>
+      <x>40</x>
+      <y>330</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -255,8 +255,8 @@ border-radius: 10px</string>
    <widget class="QLabel" name="name">
     <property name="geometry">
      <rect>
-      <x>110</x>
-      <y>300</y>
+      <x>180</x>
+      <y>260</y>
       <width>251</width>
       <height>91</height>
      </rect>
@@ -274,8 +274,8 @@ border-radius: 10px</string>
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>470</y>
+      <x>480</x>
+      <y>380</y>
       <width>31</width>
       <height>31</height>
      </rect>
@@ -293,8 +293,8 @@ border-radius: 10px</string>
    <widget class="QLabel" name="popular">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>420</y>
+      <x>200</x>
+      <y>380</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -311,8 +311,8 @@ border-radius: 10px</string>
    <widget class="QLabel" name="vegetarian">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>370</y>
+      <x>200</x>
+      <y>330</y>
       <width>161</width>
       <height>31</height>
      </rect>
@@ -329,10 +329,10 @@ border-radius: 10px</string>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>310</y>
-      <width>421</width>
-      <height>221</height>
+      <x>0</x>
+      <y>320</y>
+      <width>611</width>
+      <height>551</height>
      </rect>
     </property>
     <property name="palette">
@@ -433,23 +433,151 @@ border-radius: 10px</string>
      <string/>
     </property>
    </widget>
+   <widget class="QLabel" name="dairy">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>380</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>dairyfree</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="gluten">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>330</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>glutenfree</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>380</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/cow-solid.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>330</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../img/wheat-awn-circle-exclamation-solid.svg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="name_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>390</y>
+      <width>251</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Ingredients</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>460</y>
+      <width>601</width>
+      <height>71</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>540</y>
+      <width>601</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>image</zorder>
    <zorder>label</zorder>
+   <zorder>dairy</zorder>
+   <zorder>name_2</zorder>
+   <zorder>time</zorder>
    <zorder>label_5</zorder>
    <zorder>homeBtn</zorder>
-   <zorder>image</zorder>
    <zorder>money</zorder>
    <zorder>like</zorder>
    <zorder>label_3</zorder>
    <zorder>healthy</zorder>
    <zorder>label_4</zorder>
    <zorder>classify</zorder>
-   <zorder>label_7</zorder>
    <zorder>label_6</zorder>
-   <zorder>time</zorder>
    <zorder>name</zorder>
    <zorder>label_8</zorder>
    <zorder>popular</zorder>
    <zorder>vegetarian</zorder>
+   <zorder>gluten</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>listView</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_7</zorder>
   </widget>
  </widget>
  <resources/>
