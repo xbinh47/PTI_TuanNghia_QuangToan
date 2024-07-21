@@ -95,6 +95,53 @@ class Login(QtWidgets.QMainWindow):
     def showRegisterPage(self):
             registerPage.show()
             self.close()
+            
+class AccInfo(QtWidgets.QMainWindow):
+    def __init__(self, id):
+        super().__init__()
+        uic.loadUi("ui/acc_info.ui", self)
+        self.btnUpdate.clicked.connect(self.updateInfo)
+        self.id = id
+        self.showInfo()
+        self.uploadBtn.clicked.connect(self.loadAvatar)
+        self.avatarFile = ""
+        
+    def showInfo(self):
+        user = get_user_by_id(self.id)
+        self.txtName.setText(user[1])
+        self.txtEmail.setText(user[2])
+        self.txtPassword.setText(user[3])
+        self.txtAge.setText(user[4])
+        if user[5] == 'Female':
+            self.txtGender.setCurrentIndex(0)
+        else:
+            self.txtGender.setCurrentIndex(1)
+        self.txtWeight.setText(user[6])
+        self.txtHeight.setText(user[7])
+        if user[8]:
+            # load avatar
+            self.avatarLabel.setPixmap(QPixmap(user[8]))
+            self.txtAvatar = user[8]
+            
+    def loadAvatar(self):
+        # local
+        file, _ = QtWidgets.QFileDialog.getOpenFileName(self, "Open Image", "", "Image Files (*.png *.jpg *jpeg *.bmp)")
+        if file:
+            self.avatarFile = file
+            self.avatarLabel.setPixmap(QPixmap(file))
+
+    def updateInfo(self):
+        txt_name = self.txtName.text()
+        txt_email = self.txtEmail.text()
+        txt_age = self.txtAge.text()
+        txt_gender = self.txtGender.currentText()
+        txt_weight = self.txtWeight.text()
+        txt_height = self.txtHeight.text()
+        
+        update_user(self.id, txt_name, txt_email, txt_age, txt_gender, txt_weight, txt_height, self.avatarFile)
+        
+        
+        
 
 if __name__ == '__main__':
     sqliteConnection = sqlite3.connect('data/data.db')
@@ -116,6 +163,15 @@ if __name__ == '__main__':
         result = query_db(query)
         return result
     
+    def get_user_by_id(id):
+        query = f"SELECT * FROM USER WHERE id = {id}"
+        result = query_db(query)
+        return result[0]
+    
+    def update_user(id, name, email, age, gender, weight, height, avatar):
+        query = f"UPDATE USER SET name = '{name}', email = '{email}', age = '{age}', gender = '{gender}', weight = '{weight}', height = '{height}', avatar = '{avatar}' WHERE id = {id}"
+        insert_db(query)
+
     app = QtWidgets.QApplication(sys.argv)
 
     loginPage = Login()
