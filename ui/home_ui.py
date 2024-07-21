@@ -190,7 +190,9 @@ class Ui_Widget(object):
         self.label_10.setText(QCoreApplication.translate("Widget", u"WATER", None))
         self.label_11.setText(QCoreApplication.translate("Widget", u"MEAT", None))
         self.label_12.setText(QCoreApplication.translate("Widget", u"SWEET", None))
-        self.search.setText(QCoreApplication.translate("Widget", u"Search", None))
+        self.search.setInputMask("")
+        self.search.setText("")
+        self.search.setPlaceholderText(QCoreApplication.translate("Widget", u"Search", None))
         self.hi.setText(QCoreApplication.translate("Widget", u"12345", None))
         self.searchBtn.setText("")
     # retranslateUi
