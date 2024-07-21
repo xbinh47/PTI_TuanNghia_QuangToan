@@ -110,6 +110,12 @@ if __name__ == '__main__':
         result = cursor.fetchall() #check if the result was in db(in list)
         cursor.close()
         return result
+    
+    def get_user_by_id(id):
+        query = f"SELECT * FROM USER WHERE id = {id}"
+        result = query_db(query)
+        return result
+    
     app = QtWidgets.QApplication(sys.argv)
 
     loginPage = Login()
