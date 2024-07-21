@@ -299,7 +299,7 @@
      <string>Profile Picture:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="uploadBtn">
     <property name="geometry">
      <rect>
       <x>250</x>
@@ -548,7 +548,7 @@
      <string>Gender:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="name">
+   <widget class="QLineEdit" name="txtName">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -561,7 +561,7 @@
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="age">
+   <widget class="QLineEdit" name="txtAge">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -571,7 +571,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="weight">
+   <widget class="QLineEdit" name="txtWeight">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -581,7 +581,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="height">
+   <widget class="QLineEdit" name="txtHeight">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -591,7 +591,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="email">
+   <widget class="QLineEdit" name="txtEmail">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -604,7 +604,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLineEdit" name="password">
+   <widget class="QLineEdit" name="txtPassword">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -617,7 +617,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="btnUpdate">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -636,7 +636,7 @@
      <string>Submit</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="gender">
+   <widget class="QComboBox" name="txtGender">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -656,26 +656,43 @@
      </property>
     </item>
    </widget>
+   <widget class="QLabel" name="avatarLabel">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>10</y>
+      <width>131</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Avatar</string>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
    <zorder>label_2</zorder>
    <zorder>login_text</zorder>
    <zorder>label_7</zorder>
    <zorder>label_8</zorder>
    <zorder>label_9</zorder>
    <zorder>label_10</zorder>
-   <zorder>pushButton</zorder>
+   <zorder>uploadBtn</zorder>
    <zorder>name_info</zorder>
    <zorder>label_13</zorder>
    <zorder>label_14</zorder>
    <zorder>label_15</zorder>
    <zorder>label_11</zorder>
-   <zorder>name</zorder>
-   <zorder>age</zorder>
-   <zorder>weight</zorder>
-   <zorder>height</zorder>
-   <zorder>email</zorder>
-   <zorder>password</zorder>
-   <zorder>pushButton_2</zorder>
-   <zorder>gender</zorder>
+   <zorder>txtName</zorder>
+   <zorder>txtAge</zorder>
+   <zorder>txtWeight</zorder>
+   <zorder>txtHeight</zorder>
+   <zorder>txtEmail</zorder>
+   <zorder>txtPassword</zorder>
+   <zorder>btnUpdate</zorder>
+   <zorder>txtGender</zorder>
+   <zorder>avatarLabel</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
