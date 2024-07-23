@@ -7,7 +7,7 @@ def search_recipes(name, minCalories=-1, maxCalories=-1):
 
     query_string = {}
     query_string['apiKey'] = API_KEY
-    query_string['name'] = name
+    query_string['query'] = name
     if minCalories != -1 and minCalories >= 50:
         query_string['minCalories'] = minCalories
     if maxCalories != -1 and maxCalories <= 800:

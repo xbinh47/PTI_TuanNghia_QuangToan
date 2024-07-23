@@ -1,11 +1,13 @@
 import sys
 from PyQt6 import uic
+from PyQt6 import QtCore
 from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QGridLayout, QSizePolicy, QScrollArea
 from PyQt6.QtGui import QPixmap, QImage
 import api
 import requests
 
 class MenuItemWidget(QWidget):
+    navigate_to_detail = QtCore.pyqtSignal(int)
     def __init__(self, id, imgLink, title, parent=None):
         super().__init__(parent)
         uic.loadUi("ui/menu_Item.ui", self)
@@ -29,8 +31,7 @@ class MenuItemWidget(QWidget):
         self.setMinimumWidth(220)
     
     def navigateToDetail(self):
-        detailScreen = FoodItem(self.id)
-        detailScreen.show()
+        self.navigate_to_detail.emit(self.id)
 
 class Home(QMainWindow):
     def __init__(self):
@@ -77,6 +78,7 @@ class Home(QMainWindow):
         column = 0
         for recipe in recipes["results"]:
             itemWidget = MenuItemWidget(recipe["id"], recipe["image"], recipe["title"])
+            itemWidget.navigate_to_detail.connect(self.navigateToDetail)
             itemWidget.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
             itemWidget.setMinimumHeight(320)
             itemWidget.setMinimumWidth(220)
@@ -85,6 +87,12 @@ class Home(QMainWindow):
             if column == 2:
                 column = 0
                 row += 1
+                
+    @QtCore.pyqtSlot(int)
+    def navigateToDetail(self, movie_id):
+        self.detailScreen = FoodItem(movie_id)
+        self.detailScreen.show()
+
 
 class FoodItem(QMainWindow):
     def __init__(self, id):
@@ -92,7 +100,7 @@ class FoodItem(QMainWindow):
 
         uic.loadUi("ui/food_item.ui", self)
         self.food_detail = api.detail_recipe(id)
-        # self.time.setText(f"{self.food_detail['readyInMinutes']} minutes")
+        self.time.setText(f"{self.food_detail['readyInMinutes']} minutes")
 
 app = QApplication(sys.argv)
 home = Home()
