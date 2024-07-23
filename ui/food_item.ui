@@ -36,7 +36,7 @@
    <widget class="QPushButton" name="homeBtn">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>530</x>
       <y>30</y>
       <width>90</width>
       <height>41</height>
@@ -255,9 +255,9 @@ border-radius: 10px</string>
    <widget class="QLabel" name="name">
     <property name="geometry">
      <rect>
-      <x>180</x>
+      <x>10</x>
       <y>260</y>
-      <width>251</width>
+      <width>581</width>
       <height>91</height>
      </rect>
     </property>
@@ -550,8 +550,14 @@ border-radius: 10px</string>
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
     </property>
    </widget>
    <zorder>image</zorder>

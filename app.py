@@ -101,6 +101,16 @@ class FoodItem(QMainWindow):
         uic.loadUi("ui/food_item.ui", self)
         self.food_detail = api.detail_recipe(id)
         self.time.setText(f"{self.food_detail['readyInMinutes']} minutes")
+        self.vegetarian.setText(f"vegetarian: {self.food_detail['vegetarian']}")
+        self.name.setText(f"{self.food_detail['title']}")
+        self.gluten.setText(f"glutenFree: {self.food_detail['glutenFree']}")
+        self.money.setText(f"cheap: {self.food_detail['cheap']}")
+        self.healthy.setText(f"veryHealthy: {self.food_detail['veryHealthy']}")
+        self.popular.setText(f"veryPopular: {self.food_detail['veryPopular']}")
+        self.dairy.setText(f"dairyFree: {self.food_detail['dairyFree']}")
+        self.like.setText(f"{self.food_detail['aggregateLikes']}")
+        self.label_2.setText(f"{self.food_detail['instructions']}")
+
 
 app = QApplication(sys.argv)
 home = Home()
