@@ -171,6 +171,10 @@ class Ui_MainWindow(object):
         self.avatarLabel.setObjectName(u"avatarLabel")
         self.avatarLabel.setGeometry(QRect(650, 10, 131, 111))
         self.avatarLabel.setScaledContents(True)
+        self.btnBack = QPushButton(self.centralwidget)
+        self.btnBack.setObjectName(u"btnBack")
+        self.btnBack.setGeometry(QRect(540, 500, 201, 31))
+        self.btnBack.setFont(font2)
         MainWindow.setCentralWidget(self.centralwidget)
         self.label_2.raise_()
         self.login_text.raise_()
@@ -193,6 +197,7 @@ class Ui_MainWindow(object):
         self.btnUpdate.raise_()
         self.txtGender.raise_()
         self.avatarLabel.raise_()
+        self.btnBack.raise_()
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
         MainWindow.setStatusBar(self.statusbar)
@@ -221,5 +226,6 @@ class Ui_MainWindow(object):
         self.txtGender.setItemText(1, QCoreApplication.translate("MainWindow", u"Female", None))
 
         self.avatarLabel.setText(QCoreApplication.translate("MainWindow", u"Avatar", None))
+        self.btnBack.setText(QCoreApplication.translate("MainWindow", u"Back", None))
     # retranslateUi
 
