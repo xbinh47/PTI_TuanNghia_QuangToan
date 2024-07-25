@@ -104,27 +104,52 @@ class AccInfo(QMainWindow):
         uic.loadUi("ui/acc_info.ui", self)
         self.btnUpdate.clicked.connect(self.updateInfo)
         self.id = id
+        self.user = get_user_by_id(self.id)
         self.showInfo()
         self.uploadBtn.clicked.connect(self.loadAvatar)
         self.avatarFile = ""
         self.btnBack.clicked.connect(self.showMainPage)
+        self.caculateBtn.clicked.connect(self.healthCondition)
+
+    def bmiCaculate(self,weight,height):
+        height = height/100
+        return weight/(height*height)
         
+    def healthCondition(self):
+        if not self.user[6] and not self.user[7]:
+            err_box.setText("Weight and Height are not saved")
+            err_box.exec()
+            return
+        bmi = self.bmiCaculate(float(self.user[6]),float(self.user[7]))
+        print(bmi)
+        if bmi < 18.5:
+            self.bmi.setText(f"Underweight")
+        elif bmi < 24.9:
+            self.bmi.setText(f"Normal")
+        elif bmi < 29.9:
+            self.bmi.setText(f"Overweight")
+        elif bmi < 34.9:
+            self.bmi.setText(f"Obese")
+        else:
+            self.bmi.setText(f"Extremly obese")
+
+
     def showInfo(self):
-        user = get_user_by_id(self.id)
-        self.txtName.setText(user[1])
-        self.txtEmail.setText(user[2])
-        self.txtPassword.setText(user[3])
-        self.txtAge.setText(user[4])
-        if user[5] == 'Female':
+        
+        self.txtName.setText(self.user[1])
+        self.txtEmail.setText(self.user[2])
+        self.txtPassword.setText(self.user[3])
+        self.txtAge.setText(str(self.user[4]))
+        if self.user[5] == 'Female':
             self.txtGender.setCurrentIndex(0)
         else:
             self.txtGender.setCurrentIndex(1)
-        self.txtWeight.setText(user[6])
-        self.txtHeight.setText(user[7])
-        if user[8]:
+        self.txtWeight.setText(str(self.user[6]))
+        self.txtHeight.setText(str(self.user[7]))
+        if self.user[8]:
             # load avatar
-            self.avatarLabel.setPixmap(QPixmap(user[8]))
-            self.txtAvatar = user[8]
+            self.avatarLabel.setPixmap(QPixmap(self.user[8]))
+            self.txtAvatar = self.user[8]
             
     def loadAvatar(self):
         # local
@@ -142,6 +167,8 @@ class AccInfo(QMainWindow):
         txt_height = self.txtHeight.text()
         
         update_user(self.id, txt_name, txt_email, txt_age, txt_gender, txt_weight, txt_height, self.avatarFile)
+        success_box.setText("Update user successfully")
+        success_box.exec()
         
     def showMainPage(self):
         self.mainPage = Home(self.id)
@@ -208,6 +235,12 @@ class Home(QMainWindow):
         # Replace the listItems with the scrollArea in the layout
         self.layout().replaceWidget(self.listItems, self.scrollArea)
         self.listItems.deleteLater()
+        self.accountBtn.clicked.connect(self.showAccount)
+    
+    def showAccount(self):
+        self.accountScreen = AccInfo(self.id)
+        self.accountScreen.show()
+        self.close()
         
     def searchFood(self):
         name = self.search.text()
@@ -257,7 +290,10 @@ class FoodItem(QMainWindow):
         self.dairy.setText(f"dairyFree: {self.food_detail['dairyFree']}")
         self.like.setText(f"{self.food_detail['aggregateLikes']}")
         self.label_2.setText(f"{self.food_detail['instructions']}")
-
+        image = QImage()
+        image.loadFromData(requests.get(self.food_detail['image']).content)
+        self.image.setPixmap(QPixmap(image))
+        print(self.food_detail['image'])
 
 if __name__ == '__main__':
     sqliteConnection = sqlite3.connect('data/data.db')

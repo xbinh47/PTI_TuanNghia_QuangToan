@@ -80,6 +80,9 @@
     <property name="scaledContents">
      <bool>true</bool>
     </property>
+    <property name="openExternalLinks">
+     <bool>true</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="money">
     <property name="geometry">
