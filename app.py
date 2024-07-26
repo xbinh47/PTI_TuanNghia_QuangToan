@@ -311,30 +311,17 @@ class FoodItem(QMainWindow):
         self.scrollArea.setWidgetResizable(True)
 
         for ingredient in self.food_detail["extendedIngredients"]:
-            foodIngredient = FoodIngredient(ingredient["name"], f"{ingredient['amount']} {ingredient['unit']}", f"https://spoonacular.com/cdn/ingredients_100x100/{ingredient['image']}")
+            foodIngredient = FoodIngredient(ingredient["name"], f"{ingredient['amount']} {ingredient['unit']}", f"{ingredient['measures']["metric"]["amount"]} {ingredient['measures']["metric"]["unitLong"]}", f"https://spoonacular.com/cdn/ingredients_100x100/{ingredient['image']}")
             self.vBoxLayout.addWidget(foodIngredient)
 
-class FoodIngredient(QWidget):
-    def __init__(self, name, amount, image, parent=None):
-        super().__init__(parent)
-        uic.loadUi("ui/ingredient_Item.ui", self)
-        self.name.setText(name)
-        self.amount.setText(amount)
-        img = QImage()
-        img.loadFromData(requests.get(image).content)
-        self.image.setPixmap(QPixmap(img))
-        self.image.setScaledContents(True)
-        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
-        self.setMinimumHeight(150)
-        self.setMinimumWidth(150)
-
 
 class FoodIngredient(QWidget):
-    def __init__(self, name, amount, image, parent=None):
+    def __init__(self, name, amount, metric, image, parent=None):
         super().__init__(parent)
         uic.loadUi("ui/ingredient_Item.ui", self)
-        self.name.setText(name)
-        self.amount.setText(amount)
+        self.txtName.setText(name)
+        self.txtAmount.setText(amount)
+        self.txtMetric.setText(metric)
         img = QImage()
         img.loadFromData(requests.get(image).content)
         self.image.setPixmap(QPixmap(img))
@@ -375,8 +362,10 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
 
     loginPage = Login()
-    loginPage.show()
+    # loginPage.show()
     registerPage = Register()
+    foodItem = FoodItem(12345)
+    foodItem.show()
     err_box = QMessageBox()
     err_box.setWindowTitle("Error.")
     err_box.setIcon(QMessageBox.Icon.Warning)
