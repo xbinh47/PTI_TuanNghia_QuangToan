@@ -138,6 +138,9 @@ class Ui_Widget(object):
         self.listItems = QWidget(Widget)
         self.listItems.setObjectName(u"listItems")
         self.listItems.setGeometry(QRect(40, 210, 500, 500))
+        self.accountBtn = QPushButton(Widget)
+        self.accountBtn.setObjectName(u"accountBtn")
+        self.accountBtn.setGeometry(QRect(280, 60, 93, 29))
         self.username.raise_()
         self.avatar.raise_()
         self.Hello.raise_()
@@ -162,6 +165,7 @@ class Ui_Widget(object):
         self.listItems.raise_()
         self.search.raise_()
         self.searchBtn.raise_()
+        self.accountBtn.raise_()
 
         self.retranslateUi(Widget)
 
@@ -195,5 +199,6 @@ class Ui_Widget(object):
         self.search.setPlaceholderText(QCoreApplication.translate("Widget", u"Search", None))
         self.hi.setText(QCoreApplication.translate("Widget", u"12345", None))
         self.searchBtn.setText("")
+        self.accountBtn.setText(QCoreApplication.translate("Widget", u"adc", None))
     # retranslateUi
 

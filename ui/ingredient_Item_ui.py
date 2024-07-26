@@ -21,21 +21,21 @@ class Ui_Form(object):
     def setupUi(self, Form):
         if not Form.objectName():
             Form.setObjectName(u"Form")
-        Form.resize(300, 300)
+        Form.resize(590, 150)
         self.image = QLabel(Form)
         self.image.setObjectName(u"image")
-        self.image.setGeometry(QRect(0, 0, 300, 300))
+        self.image.setGeometry(QRect(0, 0, 150, 150))
         self.image.setPixmap(QPixmap(u"../../../../Downloads/images (2).jpeg"))
         self.image.setScaledContents(True)
-        self.time = QLabel(Form)
-        self.time.setObjectName(u"time")
-        self.time.setGeometry(QRect(10, 210, 311, 91))
+        self.amount = QLabel(Form)
+        self.amount.setObjectName(u"amount")
+        self.amount.setGeometry(QRect(150, 110, 431, 31))
         font = QFont()
         font.setPointSize(11)
-        self.time.setFont(font)
+        self.amount.setFont(font)
         self.name = QLabel(Form)
         self.name.setObjectName(u"name")
-        self.name.setGeometry(QRect(20, -20, 271, 91))
+        self.name.setGeometry(QRect(150, 0, 151, 51))
         font1 = QFont()
         font1.setPointSize(20)
         font1.setBold(True)
@@ -49,7 +49,7 @@ class Ui_Form(object):
     def retranslateUi(self, Form):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.image.setText("")
-        self.time.setText(QCoreApplication.translate("Form", u"3 medium carrots, peeled and diced", None))
+        self.amount.setText(QCoreApplication.translate("Form", u"3 medium carrots, peeled and diced", None))
         self.name.setText(QCoreApplication.translate("Form", u"Carrot", None))
     # retranslateUi
 

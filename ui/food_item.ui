@@ -529,23 +529,13 @@ border-radius: 10px</string>
      <string>Ingredients</string>
     </property>
    </widget>
-   <widget class="QListView" name="listView">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>460</y>
-      <width>591</width>
-      <height>71</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>540</y>
-      <width>601</width>
-      <height>181</height>
+      <y>610</y>
+      <width>591</width>
+      <height>111</height>
      </rect>
     </property>
     <property name="font">
@@ -556,12 +546,38 @@ border-radius: 10px</string>
     <property name="layoutDirection">
      <enum>Qt::LeftToRight</enum>
     </property>
+    <property name="styleSheet">
+     <string notr="true">overflow: visible;</string>
+    </property>
     <property name="text">
      <string>TextLabel</string>
     </property>
     <property name="wordWrap">
      <bool>true</bool>
     </property>
+   </widget>
+   <widget class="QScrollArea" name="ingredientScroll">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>460</y>
+      <width>590</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>588</width>
+       <height>148</height>
+      </rect>
+     </property>
+    </widget>
    </widget>
    <zorder>image</zorder>
    <zorder>label</zorder>
@@ -584,9 +600,9 @@ border-radius: 10px</string>
    <zorder>gluten</zorder>
    <zorder>label_10</zorder>
    <zorder>label_11</zorder>
-   <zorder>listView</zorder>
    <zorder>label_2</zorder>
    <zorder>label_7</zorder>
+   <zorder>ingredientScroll</zorder>
   </widget>
  </widget>
  <resources/>

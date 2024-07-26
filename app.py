@@ -1,7 +1,7 @@
 import sys
 from PyQt6 import uic
 from PyQt6 import QtCore
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QGridLayout, QSizePolicy, QScrollArea, QMessageBox, QFileDialog
+from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QGridLayout, QSizePolicy, QScrollArea, QMessageBox, QFileDialog, QVBoxLayout
 from PyQt6.QtGui import QPixmap, QImage
 import api
 import requests
@@ -281,19 +281,67 @@ class FoodItem(QMainWindow):
         uic.loadUi("ui/food_item.ui", self)
         self.food_detail = api.detail_recipe(id)
         self.time.setText(f"{self.food_detail['readyInMinutes']} minutes")
-        self.vegetarian.setText(f"vegetarian: {self.food_detail['vegetarian']}")
+        self.vegetarian.setText(f"{self.food_detail['vegetarian']}")
         self.name.setText(f"{self.food_detail['title']}")
-        self.gluten.setText(f"glutenFree: {self.food_detail['glutenFree']}")
-        self.money.setText(f"cheap: {self.food_detail['cheap']}")
-        self.healthy.setText(f"veryHealthy: {self.food_detail['veryHealthy']}")
-        self.popular.setText(f"veryPopular: {self.food_detail['veryPopular']}")
-        self.dairy.setText(f"dairyFree: {self.food_detail['dairyFree']}")
+        self.gluten.setText(f"{self.food_detail['glutenFree']}")
+        self.money.setText(f"{self.food_detail['cheap']}")
+        self.healthy.setText(f"{self.food_detail['veryHealthy']}")
+        self.popular.setText(f"{self.food_detail['veryPopular']}")
+        self.dairy.setText(f"{self.food_detail['dairyFree']}")
         self.like.setText(f"{self.food_detail['aggregateLikes']}")
         self.label_2.setText(f"{self.food_detail['instructions']}")
         image = QImage()
         image.loadFromData(requests.get(self.food_detail['image']).content)
         self.image.setPixmap(QPixmap(image))
-        print(self.food_detail['image'])
+
+        # Use the existing scrollArea
+        self.scrollArea = self.findChild(QScrollArea, "ingredientScroll")
+
+        # Create a QWidget to hold the horizontal layout
+        self.ingredientsWidget = QWidget()
+        self.vBoxLayout = QVBoxLayout(self.ingredientsWidget)
+        self.vBoxLayout.setContentsMargins(10, 10, 10, 10)
+        self.vBoxLayout.setSpacing(10)
+
+        self.ingredientsWidget.setLayout(self.vBoxLayout)
+        self.ingredientsWidget.setStyleSheet("background-color: white;")  # Set background color to white
+
+        # Set the scroll area widget to ingredientsWidget
+        self.scrollArea.setWidget(self.ingredientsWidget)
+        self.scrollArea.setWidgetResizable(True)
+
+        for ingredient in self.food_detail["extendedIngredients"]:
+            foodIngredient = FoodIngredient(ingredient["name"], f"{ingredient['amount']} {ingredient['unit']}", f"https://spoonacular.com/cdn/ingredients_100x100/{ingredient['image']}")
+            self.vBoxLayout.addWidget(foodIngredient)
+
+class FoodIngredient(QWidget):
+    def __init__(self, name, amount, image, parent=None):
+        super().__init__(parent)
+        uic.loadUi("ui/ingredient_Item.ui", self)
+        self.name.setText(name)
+        self.amount.setText(amount)
+        img = QImage()
+        img.loadFromData(requests.get(image).content)
+        self.image.setPixmap(QPixmap(img))
+        self.image.setScaledContents(True)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        self.setMinimumHeight(150)
+        self.setMinimumWidth(150)
+
+
+class FoodIngredient(QWidget):
+    def __init__(self, name, amount, image, parent=None):
+        super().__init__(parent)
+        uic.loadUi("ui/ingredient_Item.ui", self)
+        self.name.setText(name)
+        self.amount.setText(amount)
+        img = QImage()
+        img.loadFromData(requests.get(image).content)
+        self.image.setPixmap(QPixmap(img))
+        self.image.setScaledContents(True)
+        self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Fixed)
+        self.setMinimumHeight(300)
+        self.setMinimumWidth(150)
 
 if __name__ == '__main__':
     sqliteConnection = sqlite3.connect('data/data.db')
@@ -329,7 +377,6 @@ if __name__ == '__main__':
     loginPage = Login()
     loginPage.show()
     registerPage = Register()
-
     err_box = QMessageBox()
     err_box.setWindowTitle("Error.")
     err_box.setIcon(QMessageBox.Icon.Warning)

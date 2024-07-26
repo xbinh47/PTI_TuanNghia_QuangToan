@@ -15,8 +15,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QLabel, QListView, QMainWindow,
-    QPushButton, QSizePolicy, QWidget)
+from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QPushButton,
+    QScrollArea, QSizePolicy, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -32,7 +32,7 @@ class Ui_MainWindow(object):
         self.label_5.setScaledContents(True)
         self.homeBtn = QPushButton(self.centralwidget)
         self.homeBtn.setObjectName(u"homeBtn")
-        self.homeBtn.setGeometry(QRect(460, 30, 90, 41))
+        self.homeBtn.setGeometry(QRect(530, 30, 90, 41))
         self.homeBtn.setAutoFillBackground(False)
         self.homeBtn.setStyleSheet(u"border-radius: 15px")
         icon = QIcon()
@@ -44,6 +44,7 @@ class Ui_MainWindow(object):
         self.image.setGeometry(QRect(0, 0, 601, 351))
         self.image.setPixmap(QPixmap(u"../img/Carrot-Cake-Recipe-Video.jpg"))
         self.image.setScaledContents(True)
+        self.image.setOpenExternalLinks(True)
         self.money = QLabel(self.centralwidget)
         self.money.setObjectName(u"money")
         self.money.setGeometry(QRect(520, 330, 161, 31))
@@ -93,7 +94,7 @@ class Ui_MainWindow(object):
         self.time.setFont(font)
         self.name = QLabel(self.centralwidget)
         self.name.setObjectName(u"name")
-        self.name.setGeometry(QRect(180, 260, 251, 91))
+        self.name.setGeometry(QRect(10, 260, 581, 91))
         font2 = QFont()
         font2.setPointSize(20)
         font2.setBold(True)
@@ -150,15 +151,23 @@ class Ui_MainWindow(object):
         self.name_2.setObjectName(u"name_2")
         self.name_2.setGeometry(QRect(0, 390, 251, 91))
         self.name_2.setFont(font2)
-        self.listView = QListView(self.centralwidget)
-        self.listView.setObjectName(u"listView")
-        self.listView.setGeometry(QRect(0, 460, 601, 71))
         self.label_2 = QLabel(self.centralwidget)
         self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(0, 540, 601, 181))
+        self.label_2.setGeometry(QRect(0, 610, 591, 111))
         font3 = QFont()
         font3.setPointSize(10)
         self.label_2.setFont(font3)
+        self.label_2.setLayoutDirection(Qt.LeftToRight)
+        self.label_2.setStyleSheet(u"overflow: visible;")
+        self.label_2.setWordWrap(True)
+        self.ingredientScroll = QScrollArea(self.centralwidget)
+        self.ingredientScroll.setObjectName(u"ingredientScroll")
+        self.ingredientScroll.setGeometry(QRect(0, 460, 590, 150))
+        self.ingredientScroll.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 588, 148))
+        self.ingredientScroll.setWidget(self.scrollAreaWidgetContents)
         MainWindow.setCentralWidget(self.centralwidget)
         self.image.raise_()
         self.label.raise_()
@@ -181,9 +190,9 @@ class Ui_MainWindow(object):
         self.gluten.raise_()
         self.label_10.raise_()
         self.label_11.raise_()
-        self.listView.raise_()
         self.label_2.raise_()
         self.label_7.raise_()
+        self.ingredientScroll.raise_()
 
         self.retranslateUi(MainWindow)
 
