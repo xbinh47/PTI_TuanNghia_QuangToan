@@ -1,7 +1,7 @@
 import sys
 from PyQt6 import uic
 from PyQt6 import QtCore
-from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QGridLayout, QSizePolicy, QScrollArea, QMessageBox, QFileDialog, QVBoxLayout
+from PyQt6.QtWidgets import QApplication, QMainWindow, QWidget, QGridLayout, QSizePolicy, QScrollArea, QMessageBox, QFileDialog, QVBoxLayout, QLabel
 from PyQt6.QtGui import QPixmap, QImage
 import api
 import requests
@@ -289,7 +289,27 @@ class FoodItem(QMainWindow):
         self.popular.setText(f"{self.food_detail['veryPopular']}")
         self.dairy.setText(f"{self.food_detail['dairyFree']}")
         self.like.setText(f"{self.food_detail['aggregateLikes']}")
+
+        # Use the existing scrollArea
+        self.scrollArea = self.findChild(QScrollArea, "instructionScroll")
+
+        # Create a QWidget to hold the QLabel
+        container = QWidget()
+        layout = QVBoxLayout(container)
+        layout.setContentsMargins(0, 0, 0, 0)
+        layout.setSpacing(0)
+
+        # Create a QLabel to hold the instructions
+        self.label_2 = QLabel()
         self.label_2.setText(f"{self.food_detail['instructions']}")
+        self.label_2.setWordWrap(True)  # Enable word wrap for the instructions
+
+        layout.addWidget(self.label_2)
+        
+        # Set the scroll area widget to the container
+        self.scrollArea.setWidget(container)
+        self.scrollArea.setWidgetResizable(True)
+
         image = QImage()
         image.loadFromData(requests.get(self.food_detail['image']).content)
         self.image.setPixmap(QPixmap(image))

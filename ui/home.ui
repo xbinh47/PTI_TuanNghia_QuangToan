@@ -444,14 +444,14 @@ background-color: rgb(189, 189, 189);</string>
   <widget class="QPushButton" name="accountBtn">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>60</y>
-     <width>93</width>
-     <height>29</height>
+     <x>160</x>
+     <y>10</y>
+     <width>61</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>adc</string>
+    <string>Info</string>
    </property>
   </widget>
   <zorder>username</zorder>
