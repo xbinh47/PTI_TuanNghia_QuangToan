@@ -529,38 +529,11 @@ border-radius: 10px</string>
      <string>Ingredients</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>610</y>
-      <width>591</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="layoutDirection">
-     <enum>Qt::LeftToRight</enum>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">overflow: visible;</string>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
-    <property name="wordWrap">
-     <bool>true</bool>
-    </property>
-   </widget>
    <widget class="QScrollArea" name="ingredientScroll">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>460</y>
+      <y>450</y>
       <width>590</width>
       <height>150</height>
      </rect>
@@ -579,8 +552,75 @@ border-radius: 10px</string>
      </property>
     </widget>
    </widget>
+   <widget class="QScrollArea" name="instructionScroll">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>610</y>
+      <width>591</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>589</width>
+       <height>109</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>589</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">overflow: visible;</string>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
    <zorder>image</zorder>
    <zorder>label</zorder>
+   <zorder>instructionScroll</zorder>
+   <zorder>ingredientScroll</zorder>
    <zorder>dairy</zorder>
    <zorder>name_2</zorder>
    <zorder>time</zorder>
@@ -600,9 +640,7 @@ border-radius: 10px</string>
    <zorder>gluten</zorder>
    <zorder>label_10</zorder>
    <zorder>label_11</zorder>
-   <zorder>label_2</zorder>
    <zorder>label_7</zorder>
-   <zorder>ingredientScroll</zorder>
   </widget>
  </widget>
  <resources/>

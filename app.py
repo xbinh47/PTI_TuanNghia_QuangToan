@@ -309,9 +309,12 @@ class FoodItem(QMainWindow):
         # Set the scroll area widget to ingredientsWidget
         self.scrollArea.setWidget(self.ingredientsWidget)
         self.scrollArea.setWidgetResizable(True)
-
         for ingredient in self.food_detail["extendedIngredients"]:
-            foodIngredient = FoodIngredient(ingredient["name"], f"{ingredient['amount']} {ingredient['unit']}", f"{ingredient['measures']["metric"]["amount"]} {ingredient['measures']["metric"]["unitLong"]}", f"https://spoonacular.com/cdn/ingredients_100x100/{ingredient['image']}")
+            name = ingredient["name"]
+            amount = f"{ingredient['amount']} {ingredient['unit']}"
+            metric = f"{ingredient['measures']['metric']['amount']} {ingredient['measures']['metric']['unitLong']}"
+            image = f"https://spoonacular.com/cdn/ingredients_100x100/{ingredient['image']}"
+            foodIngredient = FoodIngredient(name, amount, metric, image)
             self.vBoxLayout.addWidget(foodIngredient)
 
 
@@ -362,10 +365,9 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
 
     loginPage = Login()
-    # loginPage.show()
+    loginPage.show()
     registerPage = Register()
-    foodItem = FoodItem(12345)
-    foodItem.show()
+
     err_box = QMessageBox()
     err_box.setWindowTitle("Error.")
     err_box.setIcon(QMessageBox.Icon.Warning)
