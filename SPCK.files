@@ -13,5 +13,10 @@ img/lemon.svg
 ui/acc_info - Copy.ui
 ui/acc_info.ui
 ui/file.txt
+ui/food_item.ui
+ui/home.ui
+ui/ingredient_Item.ui
+ui/menu_Item.ui
+ui/widget.py
 ui/login.ui
 ui/register.ui
